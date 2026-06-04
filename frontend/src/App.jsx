@@ -11,7 +11,7 @@ import DeviceStatus  from './pages/DeviceStatus';
 import PatientProfile from './pages/PatientProfile';
 
 import { useLiveData } from './hooks/useLiveData';
-import { useAlerts }   from './hooks/useAlerts';
+import { useAlerts }   from './hooks/useAlerts.jsx';
 
 function Layout() {
   const { latestReading, isConnected, isStale } = useLiveData();

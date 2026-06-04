@@ -9,7 +9,7 @@ const {
 
 router.post('/', receiveAlert);
 router.get('/', getAllAlerts);
+router.patch('/dismiss-all', dismissAllAlerts);  // MUST be before /:id/dismiss
 router.patch('/:id/dismiss', dismissAlert);
-router.patch('/dismiss-all', dismissAllAlerts);
 
 module.exports = router;
